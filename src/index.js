@@ -1,5 +1,6 @@
-import { createBoot } from "react-dom/client";
+import { createRoot } from "react-dom/client";
+import App from "./App.js";
 
-const root = createBoot(document.querySelector("#root"));
+const root = createRoot(document.querySelector("#root"));
 
 root.render(<App />);
