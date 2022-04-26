@@ -7,12 +7,12 @@ import {GiMoneyStack} from 'react-icons/gi';
 
 
 
-const Resume = () => {
+const Resume = ({ income, expense, total }) => {
     return (
         <C.Container>
-            <ResumeItems title="Entradas" Icon={FiArrowUpCircle} value = "3000" />
-            <ResumeItems title="Saídas" Icon={FiArrowDownCircle} value = "1500" />
-            <ResumeItems title="Total" Icon={GiMoneyStack} value = "1500" />
+            <ResumeItems title="Entradas" Icon={FiArrowUpCircle} value={income} />
+            <ResumeItems title="Saídas" Icon={FiArrowDownCircle} value={expense} />
+            <ResumeItems title="Total" Icon={GiMoneyStack} value={total} />
 
         </C.Container>
     );
