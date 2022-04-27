@@ -29,15 +29,23 @@ const App = () => {
         const total = Math.abs(income - expense).toFixed(2);
 
         setIncome(`R$ ${income}`);
-        setIncome(`R$ ${expense}`);
-        setIncome(`${Number(income) < Number(expense) ? "-" : ""} R$ ${total}`);
+        setExpense(`R$ ${expense}`);
+        setTotal(`${Number(income) < Number(expense) ? "-" : ""} R$ ${total}`);
     }, [transactionsList]);
+
+    const handleAdd = (transaction) => {
+        const newArrayTransactions = [...transactionsList, transaction];
+
+        setTransactionsList(newArrayTransactions);
+
+        localStorage.setItem("transactions", JSON.stringify(newArrayTransactions));
+    };
 
     return (
         <>
             <Header />
             <Resume income={income} expense={expense} total={total}/>
-            <Form />
+            <Form handleAdd={handleAdd}/>
             <Global />
         </>
     );

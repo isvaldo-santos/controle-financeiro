@@ -10,7 +10,11 @@ export const Container = styled.div`
     width: 30%;
 
     @media (max-width: 750px) {
-        width: 20%;
+
+        Container {
+            display: flex;
+            flex-direction: column;
+        }
 
         p {
             font-size: 12px;
