@@ -5,6 +5,7 @@ import Global from './styles/global';
 import Form from './components/Form';
 
 
+
 const App = () => {
     const data = localStorage.getItem("transactions");
     const [transactionsList, setTransactionsList] = useState(
@@ -45,10 +46,10 @@ const App = () => {
         <>
             <Header />
             <Resume income={income} expense={expense} total={total}/>
-            <Form handleAdd={handleAdd}/>
+            <Form handleAdd={handleAdd} transactionsList={transactionsList} setTransactionsList={setTransactionsList}/>
             <Global />
         </>
-    );
+    ); 
 };
 
 export default App;
