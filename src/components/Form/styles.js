@@ -13,7 +13,25 @@ export const Container = styled.div`
     padding: 15px 0px;
 
     @media (max-width: 750px) {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+
+
+        button {
+            padding: 1rem;
+            align-self: flex-end;
+            margin-right: 20px;
+        }
+
+        label {
+            align-self: center;
+        }
+
+        input {
+            padding: 0.8rem;
+            align-self: center;
+        }
+
     }
 `;
 
@@ -44,6 +62,12 @@ export const RadioGroup = styled.div`
         accent-color: #99f2c8;
         margin-top: 0;
     }
+
+    @media (max-width: 750px) {
+        display: flex;
+        align-items: center;
+    }
+
 `;
 
 export const Button = styled.button`

@@ -55,7 +55,6 @@ const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
                     <C.Input 
                         type="radio"
                         id="rIncome"
-                        defaultChecked
                         name="group1"
                         onChange={() => setExpense(!isExpense)}
                     />

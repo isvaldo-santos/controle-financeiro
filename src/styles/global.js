@@ -9,8 +9,10 @@ const Global = createGlobalStyle`
 
     body {
         font-family: 'Poppins', Sans-Serif;
-        background-color: #f2f2f2;
+
+        background: url(styles/assets/about-bg.png);
     }
+
 `;
 
 export default Global;

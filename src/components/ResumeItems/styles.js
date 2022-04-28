@@ -8,16 +8,16 @@ export const Container = styled.div`
     border-radius: 5px;
     padding: 5px 15px;
     width: 30%;
+    box-shadow: 0px 0px 5px #ccc;
 
     @media (max-width: 750px) {
 
-        Container {
-            display: flex;
-            flex-direction: column;
-        }
+        box-shadow: 0px 0px 5px #ccc;
+        padding-right: 5rem; 
+        padding-left: 5rem; 
 
         p {
-            font-size: 12px;
+            font-size: 20px;
         }
 
         span {
@@ -25,7 +25,8 @@ export const Container = styled.div`
         }
 
         svg {
-            display: none;
+            width: 18px;
+            height: 18px;
         }
     }
 `;
