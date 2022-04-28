@@ -9,8 +9,6 @@ const Global = createGlobalStyle`
 
     body {
         font-family: 'Poppins', Sans-Serif;
-
-        background: url(styles/assets/about-bg.png);
     }
 
 `;
